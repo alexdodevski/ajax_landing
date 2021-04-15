@@ -1,38 +1,133 @@
-/*
-Error: Invalid mixin "======".
-        on line 363 of C:\Users\vans0\Desktop\landing_for_ajax\style\style.sass
+body { margin: 0; font-family: "Montserrat", sans-serif; height: 100%; background-color: #DDDDDD; }
 
-358:         text-decoration: none
-359:         color: rgb(51, 51, 51)
-360:         margin: 15px 0px
-361: <<<<<<< HEAD
-362: 
-363: =======
-364: >>>>>>> 32c8f22e459e88ccdca95d2430124053bbd97b1a
-365: .modal
-366:     position: fixed
-367:     width: 100%
-368:     height: 100%
+.main-container { width: 480px; height: 100%; margin: 0 auto; }
 
-Backtrace:
-C:\Users\vans0\Desktop\landing_for_ajax\style\style.sass:363
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:1127:in `parse_mixin_definition'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:659:in `parse_line'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:540:in `build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid mixin \"======\".\A         on line 363 of C:\Users\vans0\Desktop\landing_for_ajax\style\style.sass\A \A 358:         text-decoration: none\A 359:         color: rgb(51, 51, 51)\A 360:         margin: 15px 0px\A 361: <<<<<<< HEAD\A 362: \A 363: =======\A 364: >>>>>>> 32c8f22e459e88ccdca95d2430124053bbd97b1a\A 365: .modal\A 366:     position: fixed\A 367:     width: 100%\A 368:     height: 100%"; }
+.offer_section { padding: 0; width: 100%; }
+
+.main_title { height: 40px; background-color: #e43315; color: #fff; text-align: center; }
+
+.block_info { position: relative; }
+
+.info_title { text-transform: uppercase; padding: 12px 20px 10px; width: 100%; font-weight: 700; font-size: 16px; line-height: 24px; text-align: center; position: absolute; top: 0; left: 0; background: rgba(235, 235, 235, 0.8); }
+
+.discount { position: absolute; right: 0; top: 46px; }
+.discount img { width: 112px; height: 112px; }
+
+.discount_text { position: absolute; top: 36px; right: 16px; font-size: 13px; line-height: 13px; text-transform: uppercase; transform: rotate(45deg); white-space: nowrap; }
+
+.block_price { position: relative; height: 80px; margin: -26px 0px; }
+
+.line { background-color: #f5ca16; width: 100%; height: 34px; position: absolute; top: 20px; }
+
+.prices { display: flex; height: 100%; justify-content: center; position: absolute; top: 0; right: 75px; }
+
+.old_price, .new_price { width: 165px; height: 100%; background-color: #e43315; display: flex; justify-content: center; align-items: center; transform: skewX(35deg); color: white; font-size: 14px; text-align: center; }
+.old_price p, .new_price p { transform: skewX(-35deg); }
+.old_price span, .new_price span { font-weight: 700; font-size: 20px; line-height: 26px; }
+
+.old_price { background-color: #222222; }
+
+#old_price { text-decoration: line-through; }
+
+.benefits { display: flex; margin: 0 auto; background-color: white; justify-content: center; padding-top: 45px; height: 220px; }
+
+.benefit { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 154px; }
+.benefit p { margin-top: 10px; font-size: 15px; text-align: center; }
+
+.order_button { width: 100%; height: 140px; background-color: white; display: flex; justify-content: center; align-items: center; }
+.order_button a { text-transform: uppercase; background: #e43315; box-shadow: 0 0 0 10px rgba(228, 51, 21, 0.3); font-size: 20px; line-height: 80px; color: white; text-align: center; text-decoration: none; cursor: pointer; width: 350px; height: 80px; border-radius: 40px; font-weight: 700; }
+
+.description { padding: 30px 0; width: 100%; background: white; }
+.description p { padding: 0 30px 5px; font-size: 15px; }
+
+.title_description { text-align: center; font-size: 30px; font-weight: 700; line-height: 38px; text-transform: uppercase; color: #222222; }
+.title_description span { color: #e43315; }
+
+.page_description { margin: 0 auto; }
+
+.description_images { display: flex; margin: 0 auto; align-items: center; justify-content: center; position: relative; }
+
+#gif { position: relative; right: 24px; }
+
+.desctiption_info { width: 100%; margin: 20px 0; }
+.desctiption_info h3 { text-align: center; margin-bottom: 15px; }
+.desctiption_info img { margin: 0 auto 20px; }
+.desctiption_info ul { list-style: none; display: flex; flex-wrap: wrap; }
+.desctiption_info ul li { position: relative; margin-bottom: 15px; padding-left: 25px; width: 210px; }
+.desctiption_info ul li:before { display: block; content: ""; width: 12px; height: 12px; border: 1px solid #e43315; background: #e43315; box-shadow: 0 0 0 2px #fff inset; top: 4px; left: 0; position: absolute; }
+
+.benefits_block { padding: 30px 0; color: #fff; background: #2e323c; width: 100%; }
+
+.title_benefits { margin-bottom: 30px; font-size: 30px; font-weight: 700; line-height: 38px; text-transform: uppercase; text-align: center; }
+.title_benefits span { color: #f5ca16; }
+
+.benefits_block1 { display: flex; flex-wrap: wrap; margin: 0 10px; }
+
+.benefit_item { width: 230px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0 10px 30px; }
+.benefit_item img { margin: 0 auto 15px; border-radius: 5px; }
+.benefit_item p { text-align: center; font-size: 15px; }
+
+.benefit_block2 { width: 100%; }
+
+.benefit_description { width: 420px; margin: 0 auto; }
+.benefit_description p { background: white; color: black; padding: 25px 30px; font-size: 15px; line-height: 22px; }
+
+.customer_reviews { width: 100%; padding: 30px; position: relative; background: white; }
+
+.title_customer { padding-right: 50px; margin-bottom: 30px; font-size: 30px; font-weight: 700; line-height: 38px; text-transform: uppercase; }
+.title_customer span { color: #e43315; }
+
+#qq { position: absolute; top: 35px; right: 30px; }
+
+.review_item { margin-bottom: 30px; }
+
+.text_review { margin-bottom: 20px; font-size: 15px; }
+
+.author_block { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+
+.about_author { display: flex; align-items: center; column-gap: 20px; }
+.about_author img { border-radius: 50%; }
+
+.author_info p:first-child { font-weight: 700; font-size: 16px; line-height: 24px; }
+
+.author_info p { font-size: 15px; }
+
+.info_review { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.rating img { margin-bottom: 7px; }
+
+.date_review { font-size: 15px; }
+
+.img_review { display: flex; column-gap: 10px; }
+
+.order_section { padding: 0; width: 100%; background: white; }
+
+.title_order { font-size: 30px; font-weight: 700; line-height: 38px; text-transform: uppercase; padding: 0 0 0 30px; }
+.title_order span { color: #e43315; }
+
+.order_steps { padding-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; height: 482px; width: 100%; }
+.order_steps .order_item:nth-child(even) { border-left: 1px solid #ebebeb; }
+
+.order_item { width: 239px; heigth: 239px; padding: 30px 60px 0 30px; border-top: 1px solid #DDDDDD; background: url("https://besttovarsale.com/assets_page/98e7fc98ccc42680e17d4b9df00efa806072d400/img/bg_light-2f0.arb.jpg"); }
+.order_item img { margin-bottom: 30px; }
+.order_item p { font-size: 15px; }
+.order_item h4 { text-transform: uppercase; }
+
+.main_order_form { padding-top: 25px; background: white; }
+
+.input_field { display: block; margin: 0 auto 20px; padding: 0 20px 0 62px; width: 370px; height: 72px; border-radius: 5px; font-family: "Montserrat", sans-serif; font-weight: 400; font-size: 16px; outline: none; color: #777777; border: 1px solid #dedede; background: #F0F0F0; }
+
+#prom { color: red; display: block; text-align: center; margin-top: 40px; }
+
+footer { padding: 30px 0px; text-align: center; font-size: 14px; background: white; width: 100%; height: 170px; }
+
+.links { display: flex; flex-direction: column; }
+.links a { text-decoration: none; color: #333333; margin: 15px 0px; }
+
+.modal { position: fixed; width: 100%; height: 100%; overflow: auto; top: 0; left: 0; z-index: 0; padding-top: 150px; background-color: rgba(0, 0, 0, 0.4); display: none; }
+
+.privacy, .agreement_user { width: 50%; padding: 20px; display: block; background-color: #fff; margin: auto; position: relative; border: 1px solid #000; z-index: 1; overflow: auto; display: none; }
+
+.btn_close { position: relative; cursor: pointer; text-align: center; width: 160px; background: #6c757d; font-size: 16px; height: 50px; line-height: 50px; color: #fff; font-weight: 700; border-radius: 8px; margin: 20px; outline: none; }
+
+#btn { margin: 0 auto; }
