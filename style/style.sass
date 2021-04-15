@@ -358,3 +358,39 @@ footer
         text-decoration: none
         color: rgb(51, 51, 51)
         margin: 15px 0px
+
+.modal
+    position: fixed
+    width: 100%
+    height: 100%
+    overflow: auto
+    top: 0
+    left: 0
+    z-index: 1
+    padding-top: 150px
+    background-color: rgba(0, 0, 0, 0.4)
+    display: none
+
+    &_content
+        width: 20%
+        padding: 20px
+        background-color: #fefefe
+        margin: auto
+        position: relative
+        border: 1px solid #000
+
+    &_content p
+        font-size: 20px
+.btn_close
+    position: relative
+    cursor: pointer
+    text-align: center
+    width: 160px
+    background: #6c757d
+    font-size: 16px
+    height: 50px
+    line-height: 50px
+    color: #fff
+    font-weight: 700
+    border-radius: 8px
+    margin: 20px auto 0
