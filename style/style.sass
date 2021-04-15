@@ -1,0 +1,360 @@
+$first-color: rgb(34, 34, 34)
+$second-color: #e43315
+$fonts: 'Montserrat', sans-serif
+
+@mixin title
+    font-size: 30px
+    font-weight: 700
+    line-height: 38px
+    text-transform: uppercase
+
+body
+    margin: 0
+    font-family: $fonts
+    height: 100%
+    background-color: #DDDDDD
+
+.main-container
+    width: 480px
+    height: 100%
+    margin: 0 auto
+
+.offer_section
+    padding: 0
+    width: 100%
+
+.main_title
+    height: 40px
+    background-color: $second-color
+    color: #fff
+    text-align: center
+
+.block_info
+    position: relative
+.info_title
+    text-transform: uppercase
+    padding: 12px 20px 10px
+    width: 100%
+    font-weight: 700
+    font-size: 16px
+    line-height: 24px
+    text-align: center
+    position: absolute
+    top: 0
+    left: 0
+    background: rgba(235,235,235,0.8)
+.discount
+    position: absolute
+    right: 0
+    top: 46px
+    img
+        width: 112px
+        height: 112px
+.discount_text
+    position: absolute
+    top: 36px
+    right: 16px
+    font-size: 13px
+    line-height: 13px
+    text-transform: uppercase
+    transform: rotate(45deg)
+    white-space: nowrap
+
+.block_price
+    position: relative
+    height: 80px
+    margin: -26px 0px
+.line
+    background-color: rgb(245, 202, 22)
+    width: 100%
+    height: 34px
+    position: absolute
+    top: 20px
+.prices
+    display: flex
+    height: 100%
+    justify-content: center
+    position: absolute
+    top: 0
+    right: 75px
+
+.old_price,.new_price
+    width: 165px
+    height: 100%
+    background-color: $second-color
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: skewX(35deg)
+    color: white
+    font-size: 14px
+    text-align: center
+    p
+        transform: skewX(-35deg)
+    span
+        font-weight: 700
+        font-size: 20px
+        line-height: 26px
+.old_price
+    background-color: $first-color
+#old_price
+    text-decoration: line-through
+
+.benefits
+    display: flex
+    margin: 0 auto
+    background-color: white
+    justify-content: center
+    padding-top: 45px
+    height: 220px
+.benefit
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    width: 154px
+    p
+        margin-top: 10px
+        font-size: 15px
+        text-align: center
+.order_button
+    width: 100%
+    height: 140px
+    background-color: white
+    display: flex
+    justify-content: center
+    align-items: center
+    a
+        text-transform: uppercase
+        background: $second-color
+        box-shadow: 0 0 0 10px rgba(228,51,21,0.3)
+        font-size: 20px
+        line-height: 80px
+        color: white
+        text-align: center
+        text-decoration: none
+        cursor: pointer
+        width: 350px
+        height: 80px
+        border-radius: 40px
+        font-weight: 700
+// description
+.description
+    padding: 30px 0
+    width: 100%
+    background: white
+    p
+        padding: 0 30px 5px
+        font-size: 15px
+.title_description
+    text-align: center
+    @include title
+    color: $first-color
+    span
+        color: $second-color
+.page_description
+    margin: 0 auto
+.description_images
+    display: flex
+    margin: 0 auto
+    align-items: center
+    justify-content: center
+    position: relative
+#gif
+    position: relative
+    right: 24px
+
+.desctiption_info
+    width: 100%
+    margin: 20px 0
+    h3
+        text-align: center
+        margin-bottom: 15px
+    img
+        margin: 0 auto 20px
+    ul
+        list-style: none
+        display: flex
+        flex-wrap: wrap
+        li
+            position: relative
+            margin-bottom: 15px
+            padding-left: 25px
+            width: 210px
+        li:before
+            display: block
+            content: ""
+            width: 12px
+            height: 12px
+            border: 1px solid $second-color
+            background: $second-color
+            box-shadow: 0 0 0 2px #fff inset
+            top: 4px
+            left: 0
+            position: absolute
+//benefits
+.benefits_block
+    padding: 30px 0
+    color: #fff
+    background: #2e323c
+    width: 100%
+.title_benefits
+    margin-bottom: 30px
+    @include title
+    text-align: center
+    span
+        color: #f5ca16
+.benefits_block1
+    display: flex
+    flex-wrap: wrap
+    margin: 0 10px
+.benefit_item
+    width: 230px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 0 10px 30px
+    img
+        margin: 0 auto 15px
+        border-radius: 5px
+    p
+        text-align: center
+        font-size: 15px
+.benefit_block2
+    width: 100%
+
+.benefit_description
+    width: 420px
+    margin: 0 auto
+    p
+        background: white
+        color: black
+        padding: 25px 30px
+        font-size: 15px
+        line-height: 22px
+
+// customer riviews
+.customer_reviews
+    width: 100%
+    padding: 30px
+    position: relative
+    background: white
+.title_customer
+    padding-right: 50px
+    margin-bottom: 30px
+    @include title
+    span
+        color: $second-color
+#qq
+    position: absolute
+    top: 35px
+    right: 30px
+
+.review_item
+    margin-bottom: 30px
+.text_review
+    margin-bottom: 20px
+    font-size: 15px
+
+.author_block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+.about_author
+    display: flex
+    align-items: center
+    column-gap: 20px
+    img
+        border-radius: 50%
+.author_info p:first-child
+    font-weight: 700
+    font-size: 16px
+    line-height: 24px
+.author_info p
+    font-size: 15px
+.info_review
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+.rating img
+    margin-bottom: 7px
+.date_review
+    font-size: 15px
+.img_review
+    display: flex
+    column-gap: 10px
+// order 
+.order_section
+    padding: 0
+    width: 100%
+    background: white
+.title_order
+    @include title
+    padding: 0 0 0 30px
+    span
+        color: $second-color
+.order_steps
+    padding-top: 30px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    height: 482px
+    // border-top: 2px solid #ebebeb
+    width: 100%
+    & .order_item:nth-child(even)
+        border-left: 1px solid #ebebeb
+.order_item
+    width: 239px
+    heigth: 239px
+    padding: 30px 60px 0 30px
+    border-top: 1px solid #DDDDDD
+    background: url('https://besttovarsale.com/assets_page/98e7fc98ccc42680e17d4b9df00efa806072d400/img/bg_light-2f0.arb.jpg')
+    img
+        margin-bottom: 30px
+    p
+        font-size: 15px
+    h4
+        text-transform: uppercase
+//form 
+.main_order_form
+    padding-top: 25px
+    background: white
+.input_field
+    display: block
+    margin: 0 auto 20px
+    padding: 0 20px 0 62px
+    width: 370px
+    height: 72px
+    border-radius: 5px
+    font-family: $fonts
+    font-weight: 400
+    font-size: 16px
+    outline: none
+    color: rgb(119, 119, 119)
+    border: 1px solid rgb(222, 222, 222)
+    background: #F0F0F0
+#prom
+    color: red
+    display: block
+    text-align: center
+    margin-top: 40px
+
+//footer
+footer
+    padding: 30px 0px
+    text-align: center
+    font-size: 14px
+    background: white
+    width: 100%
+    height: 170px
+.links
+    display: flex
+    flex-direction: column
+    a
+        text-decoration: none
+        color: rgb(51, 51, 51)
+        margin: 15px 0px
