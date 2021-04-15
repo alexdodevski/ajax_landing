@@ -8,11 +8,13 @@ const privacy = document.querySelector('.privacy')
 const agreementUser = document.querySelector('.agreement_user')
 
 politics.addEventListener('click', function() {
+
     modal.style.display = 'block'
     privacy.style.display = 'block'
 })
 
 agreement.addEventListener('click', function() {
+
     modal.style.display = 'block'
     agreementUser.style.display = 'block'
 })
