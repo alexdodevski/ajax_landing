@@ -124,8 +124,10 @@ footer { padding: 30px 0px; text-align: center; font-size: 14px; background: whi
 .links { display: flex; flex-direction: column; }
 .links a { text-decoration: none; color: #333333; margin: 15px 0px; }
 
-.modal { position: fixed; width: 100%; height: 100%; overflow: auto; top: 0; left: 0; z-index: 1; padding-top: 150px; background-color: rgba(0, 0, 0, 0.4); display: none; }
-.modal_content { width: 20%; padding: 20px; background-color: #fefefe; margin: auto; position: relative; border: 1px solid #000; }
-.modal_content p { font-size: 20px; }
+.modal { position: fixed; width: 100%; height: 100%; overflow: auto; top: 0; left: 0; z-index: 0; padding-top: 150px; background-color: rgba(0, 0, 0, 0.4); display: none; }
 
-.btn_close { position: relative; cursor: pointer; text-align: center; width: 160px; background: #6c757d; font-size: 16px; height: 50px; line-height: 50px; color: #fff; font-weight: 700; border-radius: 8px; margin: 20px auto 0; }
+.privacy, .agreement_user { width: 50%; padding: 20px; display: block; background-color: #fff; margin: auto; position: relative; border: 1px solid #000; z-index: 1; overflow: auto; display: none; }
+
+.btn_close { position: relative; cursor: pointer; text-align: center; width: 160px; background: #6c757d; font-size: 16px; height: 50px; line-height: 50px; color: #fff; font-weight: 700; border-radius: 8px; margin: 20px; outline: none; }
+
+#btn { margin: 0 auto; }
